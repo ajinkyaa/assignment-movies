@@ -1,0 +1,39 @@
+.search-sort-container {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    background-color: var(--primary-background-color);
+    position: relative;
+}
+
+.search-movie {
+    font-size: 1rem;
+    width: 90%;
+    border: 1px solid var(--primary-border-color);
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border-radius: 0.25rem;
+    background: var(--primary-white-color) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+.search-movie::placeholder {
+    margin-left: 4rem;
+}
+
+.sort-box {
+    width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-sort-container {
+        gap: 1rem;
+        padding: 0.5rem 0.5rem 0.75rem;
+    }
+
+    .search-movie {
+        height: 2rem;
+    }
+
+    .search-movie {
+        font-size: 0.75rem;
+    }
+}
